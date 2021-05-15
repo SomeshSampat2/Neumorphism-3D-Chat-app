@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "68848857544",
+    "project_id": "dchat-e208b",
+    "storage_bucket": "dchat-e208b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:68848857544:android:6b23dd5db2cc8ff4b410fd",
+        "android_client_info": {
+          "package_name": "com.covidhelpapp.a3d_chat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "68848857544-nnc0c7de2paeq6qo0c8sncmgtuhgr6vv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqxQx3CbL_EhVOpCbttkkK978AQy7wJ7U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "68848857544-nnc0c7de2paeq6qo0c8sncmgtuhgr6vv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

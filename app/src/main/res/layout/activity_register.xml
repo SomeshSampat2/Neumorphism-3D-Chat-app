@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_background"
+    tools:context=".RegisterActivity">
+
+    <LinearLayout
+        android:id="@+id/layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3D Chat"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:textSize="40dp"
+            android:fontFamily="@font/komikax"
+            android:textColor="@color/textColor"/>
+
+
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_top"
+        android:src="@drawable/background_bottom"
+        android:layout_marginTop="20dp"
+        android:transitionName="img_tree"
+        />
+
+    <LinearLayout
+
+        android:id="@+id/layout_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:orientation="vertical"
+        android:layout_below="@id/img_bottom">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome"
+            android:textSize="40sp"
+            android:textColor="@color/textColor"
+            android:fontFamily="@font/komikax"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Let's Get Started"
+            android:textSize="20sp"
+            android:textColor="@color/textColor"
+            android:fontFamily="@font/komikax"
+            android:layout_gravity="center_horizontal"
+            />
+
+        <soup.neumorphism.NeumorphCardView
+            style="@style/Widget.Neumorph.CardView"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            app:neumorph_shapeType="pressed">
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textEmailAddress"
+                android:background="@drawable/no_background"
+                android:hint="E-mail"
+                android:paddingHorizontal="20dp"
+                android:textCursorDrawable="@drawable/cursor"
+                />
+
+        </soup.neumorphism.NeumorphCardView>
+
+        <soup.neumorphism.NeumorphCardView
+            style="@style/Widget.Neumorph.CardView"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            app:neumorph_shapeType="pressed">
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textPassword"
+                android:background="@drawable/no_background"
+                android:paddingHorizontal="20dp"
+                android:hint="Password"
+                android:textCursorDrawable="@drawable/cursor"
+                />
+
+        </soup.neumorphism.NeumorphCardView>
+
+        <soup.neumorphism.NeumorphButton
+
+            android:id="@+id/register"
+            style="@style/Widget.Neumorph.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:textSize="16sp"
+            android:transitionName="reg_trans"
+            android:layout_marginHorizontal="20dp"
+            app:neumorph_shapeType="flat"
+            android:textColor="@color/textColor"
+            android:layout_gravity="center"
+            android:fontFamily="@font/komikax"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <soup.neumorphism.NeumorphImageButton
+
+                style="@style/Widget.Neumorph.Button"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/facebook_logo"
+                android:padding="20dp"/>
+
+            <soup.neumorphism.NeumorphImageButton
+                style="@style/Widget.Neumorph.Button"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/google_logo"
+                android:padding="10dp"/>
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

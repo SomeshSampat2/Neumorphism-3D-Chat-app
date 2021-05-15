@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/light_background"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <soup.neumorphism.NeumorphCardView
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        >
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/profile_image"
+                android:src="@drawable/facebook_logo"
+                android:transitionName="profile_trans"
+                app:civ_border_width="1dp"
+
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/profile_image">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/username"
+                    android:text="username"
+                    android:textColor="#111111"
+                    android:textStyle="bold"
+                    android:transitionName="username_trans"
+                    android:textSize="15dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/status"
+                    android:text="status"
+                    android:maxWidth="150dp"
+                    android:maxLines="1"
+                    android:transitionName="status_trans"
+                    android:textSize="11dp"/>
+
+
+            </LinearLayout>
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+    </soup.neumorphism.NeumorphCardView>
+
+
+
+</RelativeLayout>

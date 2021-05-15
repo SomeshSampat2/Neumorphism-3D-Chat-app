@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_background"
+    tools:context=".Fragments.RequestsFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Requests"
+                android:textSize="30dp"
+                android:textColor="#111111"
+                android:id="@+id/request_text"
+                android:layout_margin="20dp"/>
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/request_text"
+            android:padding="5dp"
+            android:id="@+id/recyclerview_requests"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No friend reuqests ...."
+            android:layout_centerInParent="true"
+            android:textSize="20dp"
+            android:visibility="gone"
+            android:id="@+id/no_req_text"/>
+
+
+
+
+
+    </RelativeLayout>
+
+</FrameLayout>

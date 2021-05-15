@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_background"
+    tools:context=".SettingsActivity">
+
+    <soup.neumorphism.NeumorphTextView
+
+        android:id="@+id/settings_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Widget.Neumorph.TextView"
+        android:fontFamily="@font/komikax"
+        android:text="Settings"
+        android:textSize="40dp"
+        android:layout_margin="20dp"
+        android:textColor="#111111"
+        />
+
+
+
+
+
+        <soup.neumorphism.NeumorphImageView
+            android:id="@+id/profile_image"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:src="@drawable/instagram_logo"
+            android:layout_below="@id/settings_txt"
+            android:layout_margin="10dp"
+            android:padding="25dp"
+            android:transitionName="@string/profile_trans"
+            style="@style/Widget.Neumorph.ImageView"
+            android:layout_centerHorizontal="true"
+            />
+
+
+
+
+    <soup.neumorphism.NeumorphCardView
+        style="@style/Widget.Neumorph.CardView"
+        android:layout_below="@id/profile_image"
+        android:layout_width="match_parent"
+        android:id="@+id/user_back"
+        android:layout_height="80dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        app:neumorph_shapeType="pressed">
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/no_background"
+            android:hint="Username"
+            android:layout_centerHorizontal="true"
+            android:transitionName="@string/user_trans"
+            android:paddingHorizontal="20dp"
+            android:textCursorDrawable="@drawable/cursor"
+            />
+
+    </soup.neumorphism.NeumorphCardView>
+
+    <soup.neumorphism.NeumorphCardView
+        style="@style/Widget.Neumorph.CardView"
+        android:layout_below="@id/user_back"
+        android:layout_width="match_parent"
+        android:id="@+id/status_back"
+        android:layout_height="80dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        app:neumorph_shapeType="pressed">
+
+        <EditText
+            android:id="@+id/status"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/no_background"
+            android:hint="Status"
+            android:layout_centerHorizontal="true"
+            android:paddingHorizontal="20dp"
+            android:textCursorDrawable="@drawable/cursor"
+            android:transitionName="@string/status_trans"
+            />
+
+    </soup.neumorphism.NeumorphCardView>
+
+    <soup.neumorphism.NeumorphButton
+
+        android:id="@+id/save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/status_back"
+        android:layout_margin="20dp"
+        app:neumorph_shapeType="flat"
+        android:fontFamily="@font/komikax"
+        style="@style/Widget.Neumorph.Button"
+        android:text="SAVE"
+        android:transitionName="but_trans"
+        android:textStyle="bold"
+        android:textSize="20dp"
+
+        />
+
+
+
+
+
+
+
+
+</RelativeLayout>

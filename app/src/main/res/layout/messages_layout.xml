@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/light_background">
+
+    <soup.neumorphism.NeumorphCardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        app:neumorph_shapeType="flat"
+        android:paddingHorizontal="15dp"
+        android:id="@+id/send_neumorph"
+        style="@style/Widget.Neumorph.CardView"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="sender messages"
+            android:id="@+id/sender_message"
+            android:layout_alignParentEnd="true"
+            android:padding="10dp"
+            android:textColor="#111111"
+            android:layout_marginTop="5dp"/>
+
+    </soup.neumorphism.NeumorphCardView>
+
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="2dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/instagram_logo"
+        android:id="@+id/profile_image"/>
+
+    <soup.neumorphism.NeumorphCardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/profile_image"
+        app:neumorph_shapeType="flat"
+        android:paddingHorizontal="15dp"
+        android:id="@+id/receive_neumorph"
+        style="@style/Widget.Neumorph.CardView"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="sender messages"
+            android:id="@+id/receiver_message"
+            android:layout_toRightOf="@+id/profile_image"
+            android:padding="10dp"
+            android:textColor="#111111"
+            android:layout_marginTop="5dp"/>
+
+    </soup.neumorphism.NeumorphCardView>
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

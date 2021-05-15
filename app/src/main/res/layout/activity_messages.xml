@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/light_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MessagesActivity">
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="0dp"
+        android:background="@color/light_background"
+        android:padding="5dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/google_logo"
+            android:transitionName="@string/profile_trans"
+            app:civ_border_width="1dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/profile_image"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/profile_image"
+                android:text="username"
+                android:transitionName="username_trans"
+                android:textColor="#111111"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/user_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/username"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/profile_image"
+                android:transitionName="status_trans"
+                android:text="userStatus" />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top"
+        android:padding="5dp"
+        android:layout_above="@+id/bottom"
+        android:id="@+id/recycler_view_messages"
+        />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom"
+        android:layout_alignParentBottom="true">
+
+        <soup.neumorphism.NeumorphCardView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            app:neumorph_shapeType="pressed"
+            android:layout_toLeftOf="@+id/send_button"
+            >
+
+
+            <EditText
+                android:id="@+id/message_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/send_button"
+                android:background="@drawable/no_background"
+                android:hint="Enter the Message"
+                android:paddingHorizontal="5dp"
+                android:paddingStart="20dp"
+                android:textCursorDrawable="@drawable/cursor" />
+
+        </soup.neumorphism.NeumorphCardView>
+
+
+
+
+        <soup.neumorphism.NeumorphButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            style="@style/Widget.Neumorph.Button"
+            android:text="Send"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/bottom_nav_background"
+            app:neumorph_shapeType="flat"
+            android:layout_centerVertical="true"
+            android:id="@+id/send_button"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_background"
+    tools:context=".StartActivity">
+
+    <LinearLayout
+        android:id="@+id/layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3D Chat"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:textSize="40dp"
+            android:textColor="@color/textColor"
+            android:transitionName="logo_text"
+            />
+
+
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_top"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/background_bottom"
+        android:transitionName="img_tree"
+        />
+
+    <RelativeLayout
+
+        android:id="@+id/layout_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@id/img_bottom">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerInParent="true">
+
+            <soup.neumorphism.NeumorphButton
+
+                android:id="@+id/register_start"
+                style="@style/Widget.Neumorph.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="30dp"
+                android:text="Register"
+                android:textColor="@color/textColor"
+                android:transitionName="reg_trans"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:neumorph_shapeType="flat" />
+
+            <soup.neumorphism.NeumorphButton
+
+                android:id="@+id/login_start"
+                style="@style/Widget.Neumorph.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:textSize="16sp"
+                android:layout_marginHorizontal="20dp"
+                app:neumorph_shapeType="flat"
+                android:textColor="@color/textColor"
+                android:textStyle="bold"
+                android:transitionName="log_trans"
+                android:layout_below="@+id/register"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"/>
+
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

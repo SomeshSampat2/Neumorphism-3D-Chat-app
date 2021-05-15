@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/light_background"
+    android:layout_height="match_parent"
+    tools:context=".FindFriendsActivity">
+
+    <soup.neumorphism.NeumorphCardView
+        style="@style/Widget.Neumorph.CardView"
+        android:id="@+id/upper_part"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_margin="10dp"
+        app:neumorph_shapeType="basin">
+
+        <EditText
+            android:id="@+id/search_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/no_background"
+            android:drawableEnd="@drawable/ic_search"
+            android:paddingHorizontal="20dp"
+            android:hint="search ..."
+
+            android:textCursorDrawable="@drawable/cursor"
+            />
+
+    </soup.neumorphism.NeumorphCardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/upper_part"
+        android:padding="5dp"
+        android:id="@+id/recyclerview_find_friends"/>
+
+
+</RelativeLayout>
