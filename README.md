@@ -1,7 +1,5 @@
 # Neumorphism 3D Chat App
-
-![20210519_121028](https://user-images.githubusercontent.com/83895108/118770302-ca1a5900-b89e-11eb-9a10-0dc9d6d8dbdf.gif) 
-![20210519_121001](https://user-images.githubusercontent.com/83895108/118770374-e28a7380-b89e-11eb-9057-08c01a87bca4.gif)
-![20210519_121206](https://user-images.githubusercontent.com/83895108/118788266-3f8f2500-b8b1-11eb-844c-6aa28478a1a7.gif)
-![20210519_121119](https://user-images.githubusercontent.com/83895108/118788358-5766a900-b8b1-11eb-9727-6c28a8edb64e.gif)
-
+![Chatting 1](https://user-images.githubusercontent.com/83895108/118914382-be836c80-b948-11eb-82a6-25fef29b4b99.gif)  
+![Chatting 2](https://user-images.githubusercontent.com/83895108/118914591-25088a80-b949-11eb-9929-c19932c33778.gif)
+![Chatting 3](https://user-images.githubusercontent.com/83895108/118914835-8af51200-b949-11eb-895e-bca30dec221b.gif)
+![Chatting 4](https://user-images.githubusercontent.com/83895108/118915416-8a10b000-b94a-11eb-97af-ddedec4fe153.gif)
